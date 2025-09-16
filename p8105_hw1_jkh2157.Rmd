@@ -22,6 +22,14 @@ Important variables include:
 - `humid`: relative humidity (%)  
 - `time_hour`: timestamp for each hourly measurement  
 
+Now I am going to create a scatterplot for temperature v time_hour 
+
+```{r}
+ggplot(early_january_weather, aes(x=time_hour,y=temp, color=humid)) + geom_point()
+ggsave("early_january_weather.pdf", height = 4, width = 6)
+```
+
+The scatter plot shows that the temperature generally increased over the two week period, and that it fluctuated throughout the day (colder ar night and hotter during the day). Colder temperatures are usually associated with lower humidity and higher temperatures are usually associated with higher humidity. 
 
 
 
