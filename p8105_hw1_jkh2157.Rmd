@@ -42,3 +42,13 @@ df = tibble (
 )
 ```
 
+Now we are going to attemp to take the means 
+
+```{r}
+mean(pull(df,vec_numeric))
+mean(pull(df,vec_logical))
+mean(pull(df,vec_char))
+mean(pull(df,vec_factor))
+```
+
+
