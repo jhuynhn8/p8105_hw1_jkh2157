@@ -1,0 +1,27 @@
+---
+title: "p8105_hw1_jkh2157"
+output: github_document
+date: "2025-09-16"
+---
+
+```{r}
+library(moderndive)
+library(tidyverse)
+```
+
+Let's load the early january weather data set 
+
+```{r}
+data("early_january_weather")
+```
+
+The `early_january_weather` dataset contains **`r nrow(early_january_weather)`** hourly observations and **`r ncol(early_january_weather)`** variables collected at Newark Airport (EWR) in early January 2013.  
+
+Important variables include:  
+- `temp`: temperature in °F (mean value: **`r round(mean(early_january_weather$temp, na.rm = TRUE), 1)`** °F)  
+- `humid`: relative humidity (%)  
+- `time_hour`: timestamp for each hourly measurement  
+
+
+
+
