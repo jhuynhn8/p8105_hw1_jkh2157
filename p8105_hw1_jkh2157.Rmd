@@ -49,6 +49,13 @@ df = tibble (
 )
 ```
 
+I'm going to run the df variable to check outputs
+
+```{r}
+df
+```
+
+
 Now we are going to attemp to take the means 
 
 ```{r}
