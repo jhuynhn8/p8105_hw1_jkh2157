@@ -65,6 +65,7 @@ mean(pull(df,vec_char))
 mean(pull(df,vec_factor))
 ```
 
+When taking the means, it only worked for the numeric and logical vectors but not the character or factor vectors. 
 
 Finally, we will write a chunk of code that applies the as.numeric function to the logical, character, and factor variables. 
 
@@ -74,3 +75,4 @@ as.numeric(pull(df, vec_char))
 as.numeric(pull(df,vec_factor))
 ```
 
+Using the as.numeric function did clarify why some means worked and why the others did not. It showed that the logical values were 0s (false) and 1s (true), which explains why we were able to get the mean. The character variable was not able to be converted to numeric values, which explains why taking the mean did not work. It also worked for the factor variable because it revealed the integer codes for the different levels. 
